@@ -4,15 +4,18 @@
 
 body{
     background-color: #293251;
+    height: 100vh;
+    position:relative;
 }
 
 .container{
-    width: 300px;    
+    margin:0;
     background-color: #FFF;
-    
+    position: absolute;
     display: block;
-    margin: 0 auto;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
     padding-bottom : 50px;
 }
@@ -74,18 +77,12 @@ body{
     cursor: pointer;
 }
 
-.temperature-value p:hover{
-    
-}
 
 .temperature-value span{
     color: #293251;
     font-size: 0.5em;
 }
 
-.temperature-description{
-    
-}
 
 .temperature-description p{
     padding: 8px;
@@ -95,9 +92,6 @@ body{
     font-size: 1.2em;
 }
 
-.location{
-    
-}
 
 .location p{
     margin: 0;
